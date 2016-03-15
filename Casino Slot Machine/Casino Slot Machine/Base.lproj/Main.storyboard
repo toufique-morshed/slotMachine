@@ -125,6 +125,8 @@
                         <outlet property="pickerViewLeft" destination="pAc-KQ-YkX" id="edR-3C-Rmv"/>
                         <outlet property="pickerViewMiddle" destination="Qht-An-tVU" id="mpU-b0-j44"/>
                         <outlet property="pickerViewRight" destination="8Ct-33-1GH" id="vka-bm-um9"/>
+                        <outlet property="scoreLabel" destination="Ghd-hV-K8Z" id="pAf-P7-wPC"/>
+                        <outlet property="spinButton" destination="G5G-5F-6ZP" id="Yyl-ro-1VQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
