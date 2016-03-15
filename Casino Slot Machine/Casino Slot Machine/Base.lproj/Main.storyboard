@@ -16,12 +16,120 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jlS-SL-yxl">
+                                <rect key="frame" x="0.0" y="118" width="375" height="224"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" placeholderIntrinsicWidth="118" placeholderIntrinsicHeight="224" translatesAutoresizingMaskIntoConstraints="NO" id="pAc-KQ-YkX">
+                                        <rect key="frame" x="10" y="0.0" width="118" height="224"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="s1n-Sx-EF0"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="f7f-QX-W9f"/>
+                                        </connections>
+                                    </pickerView>
+                                    <pickerView contentMode="scaleToFill" placeholderIntrinsicWidth="119" placeholderIntrinsicHeight="224" translatesAutoresizingMaskIntoConstraints="NO" id="Qht-An-tVU">
+                                        <rect key="frame" x="128" y="0.0" width="119" height="224"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="rH1-Dh-kKF"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="REh-db-zme"/>
+                                        </connections>
+                                    </pickerView>
+                                    <pickerView contentMode="scaleToFill" placeholderIntrinsicWidth="118" placeholderIntrinsicHeight="224" translatesAutoresizingMaskIntoConstraints="NO" id="8Ct-33-1GH">
+                                        <rect key="frame" x="247" y="0.0" width="118" height="224"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="d2p-S4-YOl"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="Qy4-xh-gdX"/>
+                                        </connections>
+                                    </pickerView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.88332501610458958" green="1" blue="0.66233542988794869" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Qht-An-tVU" firstAttribute="leading" secondItem="pAc-KQ-YkX" secondAttribute="trailing" id="0xE-iz-dPS"/>
+                                    <constraint firstItem="8Ct-33-1GH" firstAttribute="leading" secondItem="Qht-An-tVU" secondAttribute="trailing" id="8zH-14-NKT"/>
+                                    <constraint firstAttribute="bottom" secondItem="Qht-An-tVU" secondAttribute="bottom" id="BdW-kY-e22"/>
+                                    <constraint firstItem="Qht-An-tVU" firstAttribute="leading" secondItem="pAc-KQ-YkX" secondAttribute="trailing" id="D1l-dP-19c"/>
+                                    <constraint firstItem="pAc-KQ-YkX" firstAttribute="leading" secondItem="jlS-SL-yxl" secondAttribute="leading" constant="10" id="FxU-q2-kgt"/>
+                                    <constraint firstItem="Qht-An-tVU" firstAttribute="top" secondItem="jlS-SL-yxl" secondAttribute="top" id="Kc2-xZ-CYd"/>
+                                    <constraint firstAttribute="bottom" secondItem="8Ct-33-1GH" secondAttribute="bottom" id="S7L-WJ-cFq"/>
+                                    <constraint firstItem="pAc-KQ-YkX" firstAttribute="height" secondItem="Qht-An-tVU" secondAttribute="height" id="XWe-Wa-RTb"/>
+                                    <constraint firstItem="pAc-KQ-YkX" firstAttribute="width" secondItem="Qht-An-tVU" secondAttribute="width" id="Zhp-eO-5bi"/>
+                                    <constraint firstItem="8Ct-33-1GH" firstAttribute="leading" secondItem="Qht-An-tVU" secondAttribute="trailing" id="Zti-Lu-iZY"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Ct-33-1GH" secondAttribute="trailing" constant="10" id="a7x-AH-rUD"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Ct-33-1GH" secondAttribute="trailing" id="fqL-El-ybx"/>
+                                    <constraint firstItem="pAc-KQ-YkX" firstAttribute="leading" secondItem="jlS-SL-yxl" secondAttribute="leading" id="gmd-3N-Wi8"/>
+                                    <constraint firstItem="Qht-An-tVU" firstAttribute="width" secondItem="8Ct-33-1GH" secondAttribute="width" id="gmd-GR-OCQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="pAc-KQ-YkX" secondAttribute="bottom" id="hsd-cp-Ckg"/>
+                                    <constraint firstItem="pAc-KQ-YkX" firstAttribute="top" secondItem="jlS-SL-yxl" secondAttribute="top" id="iba-bc-3nr"/>
+                                    <constraint firstItem="8Ct-33-1GH" firstAttribute="top" secondItem="jlS-SL-yxl" secondAttribute="top" id="nGS-uw-gJB"/>
+                                    <constraint firstItem="pAc-KQ-YkX" firstAttribute="width" secondItem="Qht-An-tVU" secondAttribute="width" id="p1Z-b0-m7G"/>
+                                    <constraint firstItem="Qht-An-tVU" firstAttribute="width" secondItem="8Ct-33-1GH" secondAttribute="width" id="rTV-qT-dPJ"/>
+                                    <constraint firstItem="Qht-An-tVU" firstAttribute="height" secondItem="8Ct-33-1GH" secondAttribute="height" id="xCh-4c-YQa"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="XWe-Wa-RTb"/>
+                                        <exclude reference="Zhp-eO-5bi"/>
+                                        <exclude reference="gmd-3N-Wi8"/>
+                                        <exclude reference="0xE-iz-dPS"/>
+                                        <exclude reference="rTV-qT-dPJ"/>
+                                        <exclude reference="xCh-4c-YQa"/>
+                                        <exclude reference="Zti-Lu-iZY"/>
+                                        <exclude reference="fqL-El-ybx"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Slot Machine..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iv3-O7-PLC">
+                                <rect key="frame" x="20" y="47" width="335" height="48"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.38735593971631205" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
+                                <color key="textColor" red="0.99832803614368271" green="1" blue="0.007718538059412916" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.99633916884816753" green="0.01396715312391302" blue="0.13627980944766893" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5G-5F-6ZP">
+                                <rect key="frame" x="20" y="502" width="335" height="83"/>
+                                <color key="backgroundColor" red="0.93439503205128205" green="0.81908729484184206" blue="0.033754220815405848" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="70"/>
+                                <color key="tintColor" red="0.13700030910566888" green="0.59771634615384617" blue="0.11800325546796622" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="SPIN">
+                                    <color key="titleColor" red="0.59771634615384617" green="0.0057439366563827631" blue="0.016936375094307538" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="spinButtionAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sbp-ov-bX0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:   0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ghd-hV-K8Z">
+                                <rect key="frame" x="20" y="429" width="335" height="48"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.38735593969999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="29"/>
+                                <color key="textColor" red="0.99832803609999998" green="1" blue="0.0077185380589999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.99633916879999995" green="0.013967153120000001" blue="0.13627980940000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.57207550060000001" green="0.80741256480000001" blue="0.2683558043" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="jlS-SL-yxl" secondAttribute="bottom" constant="418" id="6Oc-GH-6cS"/>
+                            <constraint firstItem="jlS-SL-yxl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CRt-OD-tTf"/>
+                            <constraint firstAttribute="bottom" secondItem="jlS-SL-yxl" secondAttribute="bottom" constant="325" id="R98-i2-w8Y"/>
+                            <constraint firstAttribute="trailing" secondItem="jlS-SL-yxl" secondAttribute="trailing" id="f91-1D-pQy"/>
+                            <constraint firstItem="jlS-SL-yxl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="98" id="lvL-wN-rQS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6Oc-GH-6cS"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="pickerViewLeft" destination="pAc-KQ-YkX" id="edR-3C-Rmv"/>
+                        <outlet property="pickerViewMiddle" destination="Qht-An-tVU" id="mpU-b0-j44"/>
+                        <outlet property="pickerViewRight" destination="8Ct-33-1GH" id="vka-bm-um9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="564.5" y="443.5"/>
         </scene>
     </scenes>
 </document>
